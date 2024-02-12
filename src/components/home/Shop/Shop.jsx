@@ -28,7 +28,7 @@ const Shop = () => {
         return toast.success("Product Added!🛒")
     }
     return (
-        <div className="grid gap-3 w-[96%] mr-0 ml-12  mx-auto lg:grid-cols-3 md:grid-col-2 sm:grid-col-1">
+        <div className="grid gap-3 w-[96%] mb-3 mr-0 ml-12  mx-auto lg:grid-cols-3 md:grid-col-2 sm:grid-col-1">
             {
                 products.map(product => <Products key={product.id} handleAddToCart={handleAddToCart} product={product}></Products>)
             }
